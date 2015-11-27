@@ -38,20 +38,20 @@ public class RemoteControlFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_remote_control, container, false);
 
-        RequestQueue mQueue= Volley.newRequestQueue(getActivity());
-        StringRequest stringRequest = new StringRequest("http://www.baidu.com",
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d("TAG", response);
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("TAG", error.getMessage(), error);
-            }
-        });
-        mQueue.add(stringRequest);
+//        RequestQueue mQueue= Volley.newRequestQueue(getActivity());
+//        StringRequest stringRequest = new StringRequest("http://www.baidu.com",
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        Log.d("TAG", response);
+//                    }
+//                }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Log.e("TAG", error.getMessage(), error);
+//            }
+//        });
+//        mQueue.add(stringRequest);
 
         mSelectedTextView=(TextView)view.findViewById(R.id.fragment_remote_control_selectedTextView);
         mTypingTextView=(TextView)view.findViewById(R.id.fragment_remote_control_typingTextView);
