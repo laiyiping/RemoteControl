@@ -1,0 +1,43 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_remote_control_tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/romote_background"
+    android:stretchColumns="*"
+    tools:context="com.example.strong.remotecontrol.Fragment.RemoteControlFragment">
+
+    <TextView
+        android:id="@+id/fragment_remote_control_selectedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="50dp" />
+    <TextView
+        android:id="@+id/fragment_remote_control_typingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:paddingLeft="16dp"
+        android:layout_margin="8dp"
+        android:background="#555555"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_green_light"
+        />
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row"/>
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row"/>
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row"/>
+    <TableRow android:layout_weight="1">
+        <Button style="@style/RemoteButton.Bold"/>
+        <Button style="@style/RemoteButton"/>
+        <Button style="@style/RemoteButton.Bold"/>
+    </TableRow>
+</TableLayout>
